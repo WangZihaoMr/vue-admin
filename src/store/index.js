@@ -1,14 +1,14 @@
 import { createStore } from 'vuex'
+import user from './modules/user'
+import tagsview from './modules/tagsview'
+import getters from './getters'
+import permission from './modules/permission'
 
 export default createStore({
-  state: {
-  },
-  getters: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
+  getters,
   modules: {
-  }
+    user,
+    permission,
+    tagsview
+  },
 })
